@@ -1,0 +1,139 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-style: none;
+    font-family: 'Stint Ultra Condensed', cursive;
+    border: none;
+}
+
+.header{
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+    background: #E70012; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 10px solid #231816a8;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img{
+    width: 150px;
+    transition: .5s linear;
+}
+.menu img:hover{
+    transform: rotate(-10deg);
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px;
+    transition: .4s linear;
+}
+.menu ul li a:hover{
+    color: #E70012;
+    background: #fff;
+}
+
+.header-img{
+    width: 500px;
+    margin: auto auto;
+}
+
+
+/*Trailer*/
+.trailer{
+    padding: 2rem;
+    /* margin-top: 50px; */
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-trailer{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: url('../img/banner-trailer.jpg') center 80% no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    filter: grayscale(.5);
+    transition: .5s linear;
+}
+.banner-trailer:hover{
+    filter: grayscale(0);
+    box-shadow: -10px 10px 0 #E70012;
+}
+
+.trailer h1{
+    font-size: 5rem;
+    letter-spacing: 4px;
+    padding: 1rem 0;
+    color: #E70012;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 500px;
+    background: url('../img/footer.jpg') center top no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 10px solid #231816;
+}
+
+footer p{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer p span{
+    font-size: 2rem;
+}
+
+.links-footer a i{
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+    transition: .4s linear;
+}
+.links-footer a i:hover{
+    color: #E70012;
+    background: #fff;
+}
+
+.links-footer a + a{
+    margin-left: 1rem;
+}
