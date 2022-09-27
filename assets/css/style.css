@@ -262,7 +262,7 @@ footer p span{
         flex-direction: column;
     }
     .menu ul{
-        /* flex-direction: column; */
+        margin-top: 25px;
         justify-content: center;
     }
     .menu ul li a{
