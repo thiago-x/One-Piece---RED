@@ -93,10 +93,33 @@ html{
 }
 
 .trailer h1{
+    width: max-content;
     font-size: 5rem;
     letter-spacing: 4px;
     padding: 1rem 0;
+    position: relative;
+    transition: .5s linear;
     color: #E70012;
+    text-shadow: 3px -3px 0 #fff;
+}
+.trailer h1:hover::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: -80px;
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    background: url('../img/one-logo.jpg') center center;
+    background-size: cover;
+    transform: rotate(15deg);  
+    opacity: .8; 
+}
+#trailer-video{
+    transition: .5s linear;
+}
+#trailer-video:hover{
+    box-shadow: -10px 10px 0 #E70012;
 }
 
 /*Footer*/
@@ -104,6 +127,7 @@ footer{
     width: 100%;
     height: 500px;
     background: url('../img/footer.jpg') center top no-repeat;
+    background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -132,8 +156,145 @@ footer p span{
 .links-footer a i:hover{
     color: #E70012;
     background: #fff;
+    border-radius: 100%;
 }
 
 .links-footer a + a{
     margin-left: 1rem;
+}
+
+@media (max-width: 1200px){
+    .menu img{
+        width: 125px;
+    }
+    .menu ul li a{
+        font-size: 1.25rem;
+    }
+    .header-img{
+        width: 350px;
+    }
+    .banner-trailer{
+        width: 100%;
+        height: 175px;
+        margin-bottom: 175px;
+    }
+    .trailer h1{
+        font-size: 4rem;
+    }
+    footer p{
+        font-size: 1.25rem;
+        margin-bottom: .3rem;
+    }
+    .links-footer a i{
+        font-size: 1.5rem;
+    }
+    footer p span{
+        font-size: 1.75rem;
+    }
+    .links-footer a + a{
+        margin-left: .5rem;
+    }
+}
+@media (max-width: 1024px){
+    .menu img{
+        width: 120px;
+    }
+    .menu ul li a{
+        font-size: 1.20rem;
+    }
+    .header-img{
+        width: 350px;
+    }
+    .banner-trailer{
+        width: 100%;
+        height: 175px;
+        margin-bottom: 150px;
+    }
+    .trailer h1{
+        font-size: 3rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    .links-footer a i{
+        font-size: 1rem;
+    }
+    footer p span{
+        font-size: 1.15rem;
+    }
+    .links-footer a + a{
+        margin-left: 5px;
+    }
+    footer{
+        height: 400px;
+    }
+}
+@media (max-width: 768px){
+    .menu img{
+        width: 100px;
+    }
+    .menu ul li a{
+        font-size: 1rem;
+    }
+    .header-img{
+        width: 300px;
+    }
+    .banner-trailer{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 100px;
+    }
+    .trailer h1{
+        font-size: 2.25rem;
+    }
+    footer{
+        height: 300px;
+        background: url('../img/footer2.jpg') center top no-repeat;
+        
+    }
+}
+@media (max-width: 640px){
+    #trailer-video{
+        height: 300px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul{
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .menu ul li a{
+        font-size: 1rem;
+        margin-left: .3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 480px){
+    #trailer-video{
+        height: 250px;
+    }
+    .menu img{
+        width: 70px;
+    }
+    .menu ul li a{
+        font-size: .75rem;
+    }
+    .header-img{
+        width: 225px;
+    }
+    .banner-trailer{
+        width: 100%;
+        height: 125px;
+    }
+    .trailer h1{
+        font-size: 2rem;
+    }
+    footer{
+        height: 300px;
+    }
 }
